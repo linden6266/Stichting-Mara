@@ -11,7 +11,7 @@
             <div class="w-form">
               <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="get">
                 <div class="donaties-grid">
-    <Amount/>
+  <Amount/>
     <Data/>
     <Payment/>
                 </div>
@@ -34,24 +34,23 @@
     
     </template>
     
-    <script>
-    // import test from "@/..."
-    
-    import Navbar from '../Componenten/Navbar.vue';
-    import Amount from '../Componenten/Amount.vue';
-    import Data from '../Componenten/Data.vue';
-    import Payment from '../Componenten/Payment.vue';
-    import Footer from '../Componenten/FOoter.vue';
+    <script>  
+import Navbar from '@/components/Navbar.vue';
+import Amount from '@/components/Amount.vue';
+import Data from '@/components/Data.vue';
+import Payment from '@/components/Payment.vue';
+import Footer from '@/components/Footer.vue';
     
     
     export default {
         components: {
-        Navbar,
-        Amount,
-        Data,
-        Payment,
-        Footer
-    },
+
+    Navbar,
+    Amount,
+    Data,
+    Payment,
+    Footer
+},
         props: [
             "input_var",
         ],
